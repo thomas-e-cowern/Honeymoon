@@ -14,6 +14,7 @@
 		4DB8FDCC29846A0400928F28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DB8FDCB29846A0400928F28 /* Preview Assets.xcassets */; };
 		4DB8FDD32984734400928F28 /* Sound in Resources */ = {isa = PBXBuildFile; fileRef = 4DB8FDD22984734400928F28 /* Sound */; };
 		4DCA9E932985A30200B5AE13 /* HoneymoonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCA9E922985A30200B5AE13 /* HoneymoonModel.swift */; };
+		4DCA9E962985A3AC00B5AE13 /* HoneymoonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCA9E952985A3AC00B5AE13 /* HoneymoonData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		4DB8FDCB29846A0400928F28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4DB8FDD22984734400928F28 /* Sound */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sound; sourceTree = "<group>"; };
 		4DCA9E922985A30200B5AE13 /* HoneymoonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonModel.swift; sourceTree = "<group>"; };
+		4DCA9E952985A3AC00B5AE13 /* HoneymoonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +59,12 @@
 		4DB8FDC329846A0000928F28 /* Honeymoon */ = {
 			isa = PBXGroup;
 			children = (
+				4DCA9E972985A3AF00B5AE13 /* Data */,
 				4DCA9E942985A30A00B5AE13 /* Model */,
-				4DB8FDD22984734400928F28 /* Sound */,
 				4DB8FDC429846A0100928F28 /* HoneymoonApp.swift */,
 				4DB8FDC629846A0100928F28 /* ContentView.swift */,
 				4D2B56DE2984761800703D9B /* LaunchScreen.storyboard */,
+				4DB8FDD22984734400928F28 /* Sound */,
 				4DB8FDC829846A0400928F28 /* Assets.xcassets */,
 				4DB8FDCA29846A0400928F28 /* Preview Content */,
 			);
@@ -82,6 +85,14 @@
 				4DCA9E922985A30200B5AE13 /* HoneymoonModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4DCA9E972985A3AF00B5AE13 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4DCA9E952985A3AC00B5AE13 /* HoneymoonData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DCA9E962985A3AC00B5AE13 /* HoneymoonData.swift in Sources */,
 				4DCA9E932985A30200B5AE13 /* HoneymoonModel.swift in Sources */,
 				4DB8FDC729846A0100928F28 /* ContentView.swift in Sources */,
 				4DB8FDC529846A0100928F28 /* HoneymoonApp.swift in Sources */,
