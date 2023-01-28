@@ -15,7 +15,20 @@ struct FooterView: View {
             
             Spacer()
             
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Button(action: {
+                // Action
+                print("success")
+            }, label: {
+                Text("Book Destination".uppercased())
+                    .font(.system(.subheadline, design: .rounded))
+                    .fontWeight(.heavy)
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 12)
+                    .tint(.pink)
+                    .background(
+                        Capsule().stroke(.pink, lineWidth: 2)
+                    )
+            })
             
             Spacer()
             
