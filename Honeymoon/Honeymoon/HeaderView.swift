@@ -10,7 +10,31 @@ import SwiftUI
 struct HeaderView: View {
     var body: some View {
         HStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Button {
+                // Action
+                print("Information")
+            } label: {
+                Image(systemName: "info.circle")
+                    .font(.system(size: 24, weight: .regular))
+            }
+            .tint(.primary)
+            
+            Spacer()
+            
+            Text("Text here")
+            
+            Spacer()
+            
+            Button {
+                // Action
+                print("Guide")
+            } label: {
+                Image(systemName: "questionmark.circle")
+                    .font(.system(size: 24, weight: .regular))
+            }
+            .tint(.primary)
+
+
         }
         .padding()
     }
