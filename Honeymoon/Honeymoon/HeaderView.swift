@@ -21,7 +21,10 @@ struct HeaderView: View {
             
             Spacer()
             
-            Text("Text here")
+            Image("logo-honeymoon-pink")
+                .resizable()
+                .scaledToFit()
+                .frame(height: 28)
             
             Spacer()
             
