@@ -29,6 +29,10 @@ struct GuideView: View {
                 
                 VStack(alignment: .leading, spacing: 25) {
                     GuideComponent(title: "Like", subTitle: "Swipe Right", description: "Do you like this destination?  Touch the screen and swipe right, it will be save to favorites", icon: "heart.circle")
+                    
+                    GuideComponent(title: "Dismiss", subTitle: "Swipe Left", description: "Would you rather skip this place? Touch the screen and swipe left.  You will no longer see it", icon: "xmark.circle")
+                    
+                    GuideComponent(title: "Book", subTitle: "Tap the button", description: "Our selection of honeymoon resorts is the perfect setting for you to start your life together", icon: "checkmark.square")
                 }
                 
                 Spacer(minLength: 10)
