@@ -17,7 +17,25 @@ struct GuideComponent: View {
     var icon: String
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(alignment: .center, spacing: 20) {
+            Image(systemName: icon)
+                .font(.largeTitle)
+                .foregroundColor(.pink)
+            
+            VStack(alignment: .leading, spacing: 4) {
+                HStack {
+                    Text(title.uppercased())
+                        .fontWeight(.heavy)
+                    
+                    Spacer()
+                    
+                    Text(subTitle.uppercased())
+                        .font(.footnote)
+                        .fontWeight(.heavy)
+                        .foregroundColor(.pink)
+                }
+            }
+        }
     }
 }
 
