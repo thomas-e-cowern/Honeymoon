@@ -36,6 +36,18 @@ struct GuideView: View {
                 }
                 
                 Spacer(minLength: 10)
+                
+                Button {
+                    print("Guide View button was tapped")
+                } label: {
+                    Text("Continue".uppercased())
+                        .font(.headline)
+                        .padding()
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                        .background(Capsule().fill(.pink))
+                        .foregroundColor(.white)
+                }
+
             }
             .frame(minWidth: 0, maxWidth: .infinity)
             .padding(.top, 15)
