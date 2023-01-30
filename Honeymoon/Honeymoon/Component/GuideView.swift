@@ -14,7 +14,24 @@ struct GuideView: View {
                 
                 HeaderComponent()
                 
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                Spacer(minLength: 10)
+                
+                Text("Get Started")
+                    .fontWeight(.black)
+                    .font(.largeTitle)
+                    .foregroundColor(.pink)
+                
+                Text("Discover and pick the perfect destination for you romantic Honeymoon")
+                    .lineLimit(nil)
+                    .multilineTextAlignment(.center)
+                
+                Spacer(minLength: 10)
+                
+                VStack(alignment: .leading, spacing: 25) {
+                    GuideComponent(title: "Like", subTitle: "Swipe Right", description: "Do you like this destination?  Touch the screen and swipe right, it will be save to favorites", icon: "heart.circle")
+                }
+                
+                Spacer(minLength: 10)
             }
             .frame(minWidth: 0, maxWidth: .infinity)
             .padding(.top, 15)
