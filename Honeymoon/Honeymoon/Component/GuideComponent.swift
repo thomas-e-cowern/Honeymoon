@@ -34,6 +34,12 @@ struct GuideComponent: View {
                         .fontWeight(.heavy)
                         .foregroundColor(.pink)
                 }
+                Divider()
+                    .padding(.bottom, 4)
+                Text(description)
+                    .font(.footnote)
+                    .foregroundColor(.secondary)
+                    .fixedSize(horizontal: false, vertical: true)
             }
         }
     }
