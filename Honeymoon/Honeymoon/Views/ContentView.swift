@@ -12,6 +12,7 @@ struct ContentView: View {
     @State var showAlert: Bool = false
     @State var showGuide: Bool = false
     @State var showInfo: Bool = false
+    @GestureState private var dragState = DragState.inactive
     
     // MARK: - Card Views
     
@@ -70,6 +71,7 @@ struct ContentView: View {
         VStack {
             // MARK: - Header
             HeaderView(showGuideview: $showGuide, showInfoView: $showInfo)
+                .opacity(dragState.isDragging ? 0.0 : 1.0)
             
             Spacer()
             
@@ -78,6 +80,19 @@ struct ContentView: View {
                 ForEach(cardViews) { cardView in
                     cardView
                         .zIndex(self.isTopCard(cardView: cardView) ? 1 : 0)
+                        .gesture(LongPressGesture(minimumDuration: 0.01)
+                            .sequenced(before: DragGesture())
+                            .updating(self.$dragState, body: { (value, state, transaction) in switch value {
+                            case .first(true):
+                                state = .pressing
+                            case .second(true, let drag):
+                                state = .dragging(translation: drag?.translation ?? .zero)
+                            default:
+                                break
+                            }
+                                
+                            })
+                        )
                 }
             }
             
@@ -85,6 +100,7 @@ struct ContentView: View {
             
             // MARK: - Footer
             FooterView(showBookingAlert: $showAlert)
+                .opacity(dragState.isDragging ? 0.0 : 1.0)
         }
         .alert(isPresented: $showAlert) {
             Alert(title: Text("Success"), message: Text("Wishing you a lovely and most precious time together for the amazing couple"), dismissButton: .default(Text("Happy Honeymoon")))
