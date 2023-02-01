@@ -19,12 +19,7 @@ struct InfoView: View {
                     .fontWeight(.black)
                     .modifier(TitleModifier())
                 
-                HStack {
-                    Text("Application")
-                        .foregroundColor(.gray)
-                    Spacer()
-                    Text("Honeymoon")
-                }
+                AppInfoView()
                 
                 Text("Credits")
                     .fontWeight(.black)
@@ -43,6 +38,7 @@ struct InfoView: View {
                 } label: {
                     Text("Continue".uppercased())
                 }
+                .modifier(ButtonModifier())
 
                 
                 
@@ -58,5 +54,27 @@ struct InfoView: View {
 struct InfoView_Previews: PreviewProvider {
     static var previews: some View {
         InfoView()
+    }
+}
+
+struct AppInfoView: View {
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            RowAppInfoView()
+        }
+    }
+}
+
+struct RowAppInfoView: View {
+    var body: some View {
+        VStack {
+            HStack {
+                Text("Application")
+                    .foregroundColor(.gray)
+                Spacer()
+                Text("Honeymoon")
+            }
+            Divider()
+        }
     }
 }
