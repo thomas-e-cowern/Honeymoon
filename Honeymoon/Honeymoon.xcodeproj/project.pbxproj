@@ -69,6 +69,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		4D0E0672298A8E0500586230 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				4D0E0670298A8D8900586230 /* TitleModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 		4DB8AE042988444C0096B4ED /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,7 +114,7 @@
 				4DB8FDD22984734400928F28 /* Sound */,
 				4DB8FDC829846A0400928F28 /* Assets.xcassets */,
 				4DB8FDCA29846A0400928F28 /* Preview Content */,
-				4D0E0670298A8D8900586230 /* TitleModifier.swift */,
+				4D0E0672298A8E0500586230 /* Modifiers */,
 			);
 			path = Honeymoon;
 			sourceTree = "<group>";
