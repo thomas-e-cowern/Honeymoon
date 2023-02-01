@@ -9,7 +9,15 @@ import SwiftUI
 
 struct InfoView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(.vertical, showsIndicators: false) {
+            VStack(alignment: .center, spacing: 20) {
+                HeaderComponent()
+            }
+            .frame(minWidth: 0, maxWidth: .infinity)
+            .padding(.top, 15)
+            .padding(.bottom, 25)
+            .padding(.horizontal, 25)
+        }
     }
 }
 
