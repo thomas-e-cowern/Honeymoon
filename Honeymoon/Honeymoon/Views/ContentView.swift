@@ -24,6 +24,14 @@ struct ContentView: View {
         return views
     }()
     
+    // MARK: - Top card
+    private func isTopCard(cardView: CardView) -> Bool {
+        guard let index = cardViews.firstIndex(where: { $0.id == cardView.id }) else {
+            return false
+        }
+        return index == 0
+    }
+    
     var body: some View {
         VStack {
             // MARK: - Header
@@ -32,8 +40,11 @@ struct ContentView: View {
             Spacer()
             
             // MARK: - Cards
-            CardView(honeymoon: honeymoonData[2])
-                .padding()
+            ZStack {
+                ForEach(cardViews) { cardView in
+                    cardView
+                }
+            }
             
             Spacer()
             
