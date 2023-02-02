@@ -80,6 +80,14 @@ struct ContentView: View {
                 ForEach(cardViews) { cardView in
                     cardView
                         .zIndex(self.isTopCard(cardView: cardView) ? 1 : 0)
+                        .overlay(
+                            ZStack {
+                                Image(systemName: "x.circle")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 120))
+                                    .shadow(radius: 12, x: 0, y: 0)
+                            }
+                        )
                         .offset(x: self.isTopCard(cardView: cardView) ? self.dragState.translation.width : 0, y: self.isTopCard(cardView: cardView) ?  self.dragState.translation.height : 0)
                         .scaleEffect(self.dragState.isDragging && self.isTopCard(cardView: cardView) ? 0.85 : 1.0)
                         .rotationEffect(Angle(degrees: self.isTopCard(cardView: cardView) ? Double(self.dragState.translation.width / 12) : 0))
