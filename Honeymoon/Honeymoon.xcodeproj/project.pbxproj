@@ -23,6 +23,7 @@
 		4DB8FDCC29846A0400928F28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DB8FDCB29846A0400928F28 /* Preview Assets.xcassets */; };
 		4DB8FDD32984734400928F28 /* Sound in Resources */ = {isa = PBXBuildFile; fileRef = 4DB8FDD22984734400928F28 /* Sound */; };
 		4DC3E8EA298BEA3800FC9289 /* SymbolModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3E8E9298BEA3800FC9289 /* SymbolModifier.swift */; };
+		4DC3E8ED298BF3FC00FC9289 /* CardTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3E8EC298BF3FC00FC9289 /* CardTransition.swift */; };
 		4DCA9E932985A30200B5AE13 /* HoneymoonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCA9E922985A30200B5AE13 /* HoneymoonModel.swift */; };
 		4DCA9E962985A3AC00B5AE13 /* HoneymoonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCA9E952985A3AC00B5AE13 /* HoneymoonData.swift */; };
 /* End PBXBuildFile section */
@@ -45,6 +46,7 @@
 		4DB8FDCB29846A0400928F28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4DB8FDD22984734400928F28 /* Sound */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sound; sourceTree = "<group>"; };
 		4DC3E8E9298BEA3800FC9289 /* SymbolModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolModifier.swift; sourceTree = "<group>"; };
+		4DC3E8EC298BF3FC00FC9289 /* CardTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransition.swift; sourceTree = "<group>"; };
 		4DCA9E922985A30200B5AE13 /* HoneymoonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonModel.swift; sourceTree = "<group>"; };
 		4DCA9E952985A3AC00B5AE13 /* HoneymoonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 		4DB8FDC329846A0000928F28 /* Honeymoon */ = {
 			isa = PBXGroup;
 			children = (
+				4DC3E8EB298BF3E800FC9289 /* Extension */,
 				4D0E066F298A8C3700586230 /* Views */,
 				4DB8AE042988444C0096B4ED /* Component */,
 				4DCA9E972985A3AF00B5AE13 /* Data */,
@@ -131,6 +134,14 @@
 				4DB8FDCB29846A0400928F28 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4DC3E8EB298BF3E800FC9289 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4DC3E8EC298BF3FC00FC9289 /* CardTransition.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		4DCA9E942985A30A00B5AE13 /* Model */ = {
@@ -225,6 +236,7 @@
 				4D96B9892985ACCB00622DCB /* FooterView.swift in Sources */,
 				4D96B9872985AA9A00622DCB /* HeaderView.swift in Sources */,
 				4D0E0671298A8D8900586230 /* TitleModifier.swift in Sources */,
+				4DC3E8ED298BF3FC00FC9289 /* CardTransition.swift in Sources */,
 				4DC3E8EA298BEA3800FC9289 /* SymbolModifier.swift in Sources */,
 				4D0E066C298A8C2200586230 /* InfoView.swift in Sources */,
 				4DCA9E932985A30200B5AE13 /* HoneymoonModel.swift in Sources */,
