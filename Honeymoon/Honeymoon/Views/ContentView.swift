@@ -83,9 +83,7 @@ struct ContentView: View {
                         .overlay(
                             ZStack {
                                 Image(systemName: "x.circle")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 120))
-                                    .shadow(radius: 12, x: 0, y: 0)
+                                    .modifier(SymbolModifier())
                             }
                         )
                         .offset(x: self.isTopCard(cardView: cardView) ? self.dragState.translation.width : 0, y: self.isTopCard(cardView: cardView) ?  self.dragState.translation.height : 0)
