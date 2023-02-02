@@ -13,6 +13,7 @@ struct ContentView: View {
     @State var showGuide: Bool = false
     @State var showInfo: Bool = false
     @State private var lastCardIndex: Int = 1
+    @State private var cardRemovalTransition = AnyTransition.trailingBottom
     @GestureState private var dragState = DragState.inactive
     private let dragAreaThreshold: CGFloat = 65.0
     
