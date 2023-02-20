@@ -33,6 +33,7 @@ struct InfoView: View {
                 Spacer(minLength: 10)
                 
                 Button {
+                    playSound(sound: "sound-click", type: "mp3")
                     print("InfoView button was tapped")
                     dismiss()
                 } label: {

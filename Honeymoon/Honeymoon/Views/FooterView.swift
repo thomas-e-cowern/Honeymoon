@@ -19,7 +19,9 @@ struct FooterView: View {
             Spacer()
             
             Button(action: {
+                playSound(sound: "sound-click", type: "mp3")
                 self.showBookingAlert.toggle()
+                
                 print("success")
             }, label: {
                 Text("Book Destination".uppercased())

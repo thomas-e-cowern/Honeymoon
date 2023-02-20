@@ -17,6 +17,7 @@ struct HeaderView: View {
             Button {
                 // Action
                 print("Information")
+                playSound(sound: "sound-click", type: "mp3")
                 self.showInfoView.toggle()
             } label: {
                 Image(systemName: "info.circle")
@@ -38,6 +39,7 @@ struct HeaderView: View {
             
             Button {
                 self.showGuideview.toggle()
+                playSound(sound: "sound-click", type: "mp3")
                 print("Guide")
             } label: {
                 Image(systemName: "questionmark.circle")
