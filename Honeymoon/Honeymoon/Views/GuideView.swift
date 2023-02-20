@@ -40,6 +40,7 @@ struct GuideView: View {
                 Spacer(minLength: 10)
                 
                 Button {
+                    playSound(sound: "sound-click", type: "mp3")
                     dismiss()
                     print("Guide View button was tapped")
                 } label: {
