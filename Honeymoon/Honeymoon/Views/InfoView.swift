@@ -34,7 +34,6 @@ struct InfoView: View {
                 
                 Button {
                     playSound(sound: "sound-click", type: "mp3")
-                    print("InfoView button was tapped")
                     dismiss()
                 } label: {
                     Text("Continue".uppercased())

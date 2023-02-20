@@ -42,7 +42,6 @@ struct GuideView: View {
                 Button {
                     playSound(sound: "sound-click", type: "mp3")
                     dismiss()
-                    print("Guide View button was tapped")
                 } label: {
                     Text("Continue".uppercased())
                         .modifier(ButtonModifier())

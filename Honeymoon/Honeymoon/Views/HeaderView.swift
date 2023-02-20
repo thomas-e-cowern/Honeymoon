@@ -18,7 +18,6 @@ struct HeaderView: View {
         HStack {
             Button {
                 // Action
-                print("Information")
                 playSound(sound: "sound-click", type: "mp3")
                 self.haptics.notificationOccurred(.success)
                 self.showInfoView.toggle()
@@ -44,7 +43,6 @@ struct HeaderView: View {
                 self.showGuideview.toggle()
                 playSound(sound: "sound-click", type: "mp3")
                 self.haptics.notificationOccurred(.success)
-                print("Guide")
             } label: {
                 Image(systemName: "questionmark.circle")
                     .font(.system(size: 24, weight: .regular))
