@@ -66,6 +66,7 @@ struct AppInfoView: View {
             RowAppInfoView(itemOne: "Designer", itemTwo: "Robert Petras")
             RowAppInfoView(itemOne: "Website", itemTwo: "swiftuimasterclass.com")
             RowAppInfoView(itemOne: "Version", itemTwo: "1.0.0")
+            RowAppInfoView(itemOne: "Additional Icons", itemTwo: "https://hotpot.ai/icon-resizer")
         }
     }
 }
