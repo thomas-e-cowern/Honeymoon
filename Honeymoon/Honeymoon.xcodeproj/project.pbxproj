@@ -21,7 +21,7 @@
 		4DB8FDC529846A0100928F28 /* HoneymoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB8FDC429846A0100928F28 /* HoneymoonApp.swift */; };
 		4DB8FDC929846A0400928F28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DB8FDC829846A0400928F28 /* Assets.xcassets */; };
 		4DB8FDCC29846A0400928F28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DB8FDCB29846A0400928F28 /* Preview Assets.xcassets */; };
-		4DB8FDD32984734400928F28 /* Sound in Resources */ = {isa = PBXBuildFile; fileRef = 4DB8FDD22984734400928F28 /* Sound */; };
+		4DB9731E29A3B7740067D027 /* sound-click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4DB9731D29A3B7740067D027 /* sound-click.mp3 */; };
 		4DC3E8EA298BEA3800FC9289 /* SymbolModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3E8E9298BEA3800FC9289 /* SymbolModifier.swift */; };
 		4DC3E8ED298BF3FC00FC9289 /* CardTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3E8EC298BF3FC00FC9289 /* CardTransition.swift */; };
 		4DC3E8F0298BF7C800FC9289 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3E8EF298BF7C800FC9289 /* PlaySound.swift */; };
@@ -45,7 +45,8 @@
 		4DB8FDC429846A0100928F28 /* HoneymoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonApp.swift; sourceTree = "<group>"; };
 		4DB8FDC829846A0400928F28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DB8FDCB29846A0400928F28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4DB8FDD22984734400928F28 /* Sound */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sound; sourceTree = "<group>"; };
+		4DB9731D29A3B7740067D027 /* sound-click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-click.mp3"; sourceTree = "<group>"; };
+		4DB9731F29A3B7760067D027 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
 		4DC3E8E9298BEA3800FC9289 /* SymbolModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolModifier.swift; sourceTree = "<group>"; };
 		4DC3E8EC298BF3FC00FC9289 /* CardTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransition.swift; sourceTree = "<group>"; };
 		4DC3E8EF298BF7C800FC9289 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
@@ -115,6 +116,7 @@
 		4DB8FDC329846A0000928F28 /* Honeymoon */ = {
 			isa = PBXGroup;
 			children = (
+				4DB9731C29A3B7660067D027 /* New Group */,
 				4DC3E8EE298BF7A900FC9289 /* Helpers */,
 				4DC3E8EB298BF3E800FC9289 /* Extension */,
 				4D0E066F298A8C3700586230 /* Views */,
@@ -123,7 +125,6 @@
 				4DCA9E942985A30A00B5AE13 /* Model */,
 				4DB8FDC429846A0100928F28 /* HoneymoonApp.swift */,
 				4D2B56DE2984761800703D9B /* LaunchScreen.storyboard */,
-				4DB8FDD22984734400928F28 /* Sound */,
 				4DB8FDC829846A0400928F28 /* Assets.xcassets */,
 				4DB8FDCA29846A0400928F28 /* Preview Content */,
 				4D0E0672298A8E0500586230 /* Modifiers */,
@@ -137,6 +138,15 @@
 				4DB8FDCB29846A0400928F28 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4DB9731C29A3B7660067D027 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				4DB9731D29A3B7740067D027 /* sound-click.mp3 */,
+				4DB9731F29A3B7760067D027 /* sound-rise.mp3 */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		4DC3E8EB298BF3E800FC9289 /* Extension */ = {
@@ -229,7 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DB8FDD32984734400928F28 /* Sound in Resources */,
+				4DB9731E29A3B7740067D027 /* sound-click.mp3 in Resources */,
 				4D2B56DF2984761800703D9B /* LaunchScreen.storyboard in Resources */,
 				4DB8FDCC29846A0400928F28 /* Preview Assets.xcassets in Resources */,
 				4DB8FDC929846A0400928F28 /* Assets.xcassets in Resources */,
