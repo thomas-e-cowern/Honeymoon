@@ -116,7 +116,7 @@
 		4DB8FDC329846A0000928F28 /* Honeymoon */ = {
 			isa = PBXGroup;
 			children = (
-				4DB9731C29A3B7660067D027 /* New Group */,
+				4DB9731C29A3B7660067D027 /* Sounds */,
 				4DC3E8EE298BF7A900FC9289 /* Helpers */,
 				4DC3E8EB298BF3E800FC9289 /* Extension */,
 				4D0E066F298A8C3700586230 /* Views */,
@@ -140,13 +140,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		4DB9731C29A3B7660067D027 /* New Group */ = {
+		4DB9731C29A3B7660067D027 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
 				4DB9731D29A3B7740067D027 /* sound-click.mp3 */,
 				4DB9731F29A3B7760067D027 /* sound-rise.mp3 */,
 			);
-			path = "New Group";
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		4DC3E8EB298BF3E800FC9289 /* Extension */ = {
