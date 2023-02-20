@@ -22,6 +22,7 @@
 		4DB8FDC929846A0400928F28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DB8FDC829846A0400928F28 /* Assets.xcassets */; };
 		4DB8FDCC29846A0400928F28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DB8FDCB29846A0400928F28 /* Preview Assets.xcassets */; };
 		4DB9731E29A3B7740067D027 /* sound-click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4DB9731D29A3B7740067D027 /* sound-click.mp3 */; };
+		4DB9732129A3C19D0067D027 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4DB9732029A3C19D0067D027 /* sound-rise.mp3 */; };
 		4DC3E8EA298BEA3800FC9289 /* SymbolModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3E8E9298BEA3800FC9289 /* SymbolModifier.swift */; };
 		4DC3E8ED298BF3FC00FC9289 /* CardTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3E8EC298BF3FC00FC9289 /* CardTransition.swift */; };
 		4DC3E8F0298BF7C800FC9289 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3E8EF298BF7C800FC9289 /* PlaySound.swift */; };
@@ -46,7 +47,7 @@
 		4DB8FDC829846A0400928F28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DB8FDCB29846A0400928F28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4DB9731D29A3B7740067D027 /* sound-click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-click.mp3"; sourceTree = "<group>"; };
-		4DB9731F29A3B7760067D027 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
+		4DB9732029A3C19D0067D027 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
 		4DC3E8E9298BEA3800FC9289 /* SymbolModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolModifier.swift; sourceTree = "<group>"; };
 		4DC3E8EC298BF3FC00FC9289 /* CardTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransition.swift; sourceTree = "<group>"; };
 		4DC3E8EF298BF7C800FC9289 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
@@ -143,8 +144,8 @@
 		4DB9731C29A3B7660067D027 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				4DB9732029A3C19D0067D027 /* sound-rise.mp3 */,
 				4DB9731D29A3B7740067D027 /* sound-click.mp3 */,
-				4DB9731F29A3B7760067D027 /* sound-rise.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -239,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DB9732129A3C19D0067D027 /* sound-rise.mp3 in Resources */,
 				4DB9731E29A3B7740067D027 /* sound-click.mp3 in Resources */,
 				4D2B56DF2984761800703D9B /* LaunchScreen.storyboard in Resources */,
 				4DB8FDCC29846A0400928F28 /* Preview Assets.xcassets in Resources */,
